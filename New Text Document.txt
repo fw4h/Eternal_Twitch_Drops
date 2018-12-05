@@ -1,0 +1,42 @@
+<canvas width="256" height="256" id="bronzeIdle-output"></canvas>
+
+<div class="newDrop bronzeOpen dropHide" data-nonce="5ab3fc3d8735a9e9" data-upgrades="0" data-account="63cab89e-e1a2-4674-8907-801c1bd603d2" data-clicked="false" data-currencygranted="235" style="left: 202px; top: 129px;">
+                <div class="currencyGranted hideCurrency"><span><img src="assets/StreamerPoints_Icon.png" alt="Streamer Point"> <h1> +235</h1></span></div>
+                <video id="bronzeOpen-video" style="display:none" muted="muted">
+                    <source src="assets/video/Bronze_Chest_Open.mp4" type="video/mp4">
+                    <img src="assets/video/BronzeChest.png" alt="Bronze Chest">
+                </video>
+                <canvas width="256" height="512" id="bronzeOpen-buffer"></canvas>
+                <canvas width="256" height="256" id="bronzeOpen-output"></canvas>  
+            </div>
+			
+			
+			<div class="newDrop bronzeUpgrade dropHide" data-nonce="5ab3fc3d8735a9e9" data-upgrades="0" data-account="63cab89e-e1a2-4674-8907-801c1bd603d2" data-clicked="false" data-currencygranted="235" style="left: 202px; top: 129px;">
+                <video id="bronzeUpgrade-video" style="display:none" muted="muted">
+                    <source src="assets/video/BronzeUpgrade_Tall.mp4" type="video/mp4">
+                    <img src="assets/video/SilverChest.png" alt="Silver Chest Upgrade">
+                </video>
+                <canvas width="256" height="512" id="bronzeUpgrade-buffer"></canvas>
+                <canvas width="256" height="256" id="bronzeUpgrade-output"></canvas>  
+            </div>
+			
+
+			<div class="newDrop silverIdle dropHide" data-nonce="5ab3fc3d8735a9e9" data-upgrades="0" data-account="63cab89e-e1a2-4674-8907-801c1bd603d2" data-clicked="false" data-currencygranted="235" style="left: 202px; top: 129px;">
+                <video id="silverIdle-video" style="display:none" muted="muted">
+                    <source src="assets/video/Silver_Idle.mp4" type="video/mp4">
+                    <img src="assets/video/SilverChest.png" alt="Silver Chest">
+                </video>
+                <canvas width="256" height="512" id="silverIdle-buffer"></canvas>
+                <canvas width="256" height="256" id="silverIdle-output"></canvas>  
+            </div>
+			
+			<div class="newDrop silverOpen dropHide" data-nonce="5ab3fc3d8735a9e9" data-upgrades="0" data-account="63cab89e-e1a2-4674-8907-801c1bd603d2" data-clicked="false" data-currencygranted="235" style="left: 202px; top: 129px;">
+                <div class="currencyGranted"></div>
+                <video id="silverOpen-video" style="display:none" muted="muted">
+                    <source src="assets/video/Silver_Open.mp4" type="video/mp4">
+                    <img src="assets/video/SilverChest.png" alt="Silver Chest">
+                </video>
+                <canvas width="256" height="512" id="silverOpen-buffer"></canvas>
+                <canvas width="256" height="256" id="silverOpen-output"></canvas>
+            </div>
+			
