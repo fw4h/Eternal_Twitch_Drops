@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Eternal Twitch Drop
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.twitch.tv/zenaton?referrer=raid
@@ -54,23 +54,54 @@ var DIRECTORY_URL = 'https://www.twitch.tv/directory/game/Eternal';
                     location.reload();
                 } else {
                     setTimeout(stuff, 1000 * 60 * 5);
-                } 
+                }
                 // var mounsedownEvent = new MouseEvent('mousedown');
                 // var mounseupEvent = new MouseEvent('mouseup');
+                //var testdwang62 = document.getElementsByClassName('tw-svg__asset tw-svg__asset--more tw-svg__asset--inherit')[0];
                 // setInterval(function () {
-                //     if (typeof document.getElementById('bronzeIdle-output') != "undefined") {
-                //         var activeDropBronze = document.getElementById('bronzeIdle-output');
-                //         var testdwang62 = document.getElementsByClassName('tw-svg__asset tw-svg__asset--more tw-svg__asset--inherit')[0];
-                        
-                //         testdwang62.dispatchEvent(mounsedownEvent);
-                //         testdwang62.dispatchEvent(mounseupEvent);
-                //         //activeDropBronze.click();
-                //         if (typeof document.getElementById('silverIdle-output') != "undefined") {
-                //             //var activeDropSilver = document.getElementById('silverIdle-output');
-                //             //activeDropSilver.click();
-                //         }
-                //     }
-                // }, 200);
+                // var testdwang62 = document.getElementById('bronzeIdle-output');
+                // function getPosition(element) {
+
+
+                //     var rect = element.getBoundingClientRect();
+                //     console.log(rect.top, rect.right, rect.bottom, rect.left);
+                //     var xmiddle = (rect.right + rect.left) / 2;
+                //     var ymiddle = (rect.top + rect.bottom) / 2;
+                //     return { x: xmiddle, y: ymiddle };
+                //     // if (typeof document.getElementById('bronzeIdle-output') != "undefined") {
+                //     //     var activeDropBronze = document.getElementById('bronzeIdle-output');                       
+                //     //     testdwang62.dispatchEvent(mounsedownEvent);
+                //     //     testdwang62.dispatchEvent(mounseupEvent);
+                //     //     //activeDropBronze.click();
+                //     //     if (typeof document.getElementById('silverIdle-output') != "undefined") {
+                //     //         //var activeDropSilver = document.getElementById('silverIdle-output');
+                //     //         //activeDropSilver.click();
+                //     //     }
+                //     // }
+                // }
+                // var pos = getPosition(testdwang62);
+                // // alert(pos.x);
+                // // alert(pos.y);
+
+                // var ev = new MouseEvent('click', {
+                //     'view': window,
+                //     'bubbles': true,
+                //     'cancelable': true,
+                //     'screenX': pos.x,
+                //     'screenY': pos.y
+                // });
+
+                // var el = document.elementFromPoint(pos.x,pos.y);
+
+                // //     el.dispatchEvent(ev);
+                // // }
+                // var mounsedownEvent = new MouseEvent('mousedown');
+                // var mounseupEvent = new MouseEvent('mouseup');
+                
+                //     el.dispatchEvent(ev);
+                // alert(pos.x);
+                // alert(pos.y);
+                // }, 5000);
             }
         }
         else {
@@ -99,8 +130,7 @@ var DIRECTORY_URL = 'https://www.twitch.tv/directory/game/Eternal';
     //     }, 200);
 
     //     var testdwang62 = document.querySelector('tw-svg__asset tw-svg__asset--more tw-svg__asset--inherit');
-    //     var mounsedownEvent = new MouseEvent('mousedown');
-    //     var mounseupEvent = new MouseEvent('mouseup');
+
 
     //     setInterval(function () {
     //         testdwang62.InvokeMember("click");
