@@ -70,9 +70,12 @@
 <h2>Eternal_Twitch_Drops.sikuli</h2> <a href="Eternal_Twitch_Drops.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
+setThrowException(False)
 <span class="kw">while</span> True:
     <span class="kw">if</span> exists(<span class="str">"bronzedrop.PNG"</span>):
         <span class="skw">click</span>(<span class="str">"bronzedrop.PNG"</span>)
+    <span class="kw">if</span> exists(Pattern(<span class="str">"silverdrop.PNG"</span>).similar(<span class="dig">0.50</span>)):
+        <span class="skw">click</span>(Pattern(<span class="str">"silverdrop-1.PNG"</span>).similar(<span class="dig">0.50</span>))
         <span class="kw">continue</span>
     <span class="kw">else</span>:
         <span class="kw">continue</span>
