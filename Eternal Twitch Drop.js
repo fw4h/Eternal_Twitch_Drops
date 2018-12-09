@@ -40,10 +40,16 @@ var DIRECTORY_URL = 'https://www.twitch.tv/directory/game/Eternal';
                 window.location = streams[Math.floor(Math.random() * streams.length)].getElementsByTagName('a')[0].href;
             }
         }
-        // check the existence of drops 
-        else if (typeof document.getElementsByClassName('drops-campaign-details__drops-success tw-strong')[0] != "undefined") {
-            var currentGame = document.getElementsByClassName('drops-campaign-details__drops-success tw-strong')[0].textContent;
-            if (!(currentGame === "Drops enabled!")) {
+        // check the existence of drops
+        else if (typeof document.getElementsByClassName('player-streamstatus__label')[0] != "undefined")
+            //if (typeof document.getElementsByClassName('drops-campaign-details__drops-success tw-strong')[0] != "undefined")
+        {
+            //var currentGame = document.getElementsByClassName('drops-campaign-details__drops-success tw-strong')[0].textContent;
+            var streamStatus = document.getElementsByClassName('player-streamstatus__label')[0].textContent;
+            // "drops enabled" somehow disappears
+            //if (!(currentGame === "Drops enabled!"))
+            if (streamStatus != "Live")
+            {
                 // get back to ESL!
                 //alert(currentGame);
                 window.location = DIRECTORY_URL;
@@ -51,7 +57,8 @@ var DIRECTORY_URL = 'https://www.twitch.tv/directory/game/Eternal';
                 // re-evaluate every now and then and reload every few cycles incase something gets stuck
                 nbReloads++;
                 if (nbReloads >= 6) {
-                    location.reload();
+                    //location.reload();
+                    window.location = DIRECTORY_URL;
                 } else {
                     setTimeout(stuff, 1000 * 60 * 5);
                 }
@@ -69,7 +76,7 @@ var DIRECTORY_URL = 'https://www.twitch.tv/directory/game/Eternal';
                 //     var ymiddle = (rect.top + rect.bottom) / 2;
                 //     return { x: xmiddle, y: ymiddle };
                 //     // if (typeof document.getElementById('bronzeIdle-output') != "undefined") {
-                //     //     var activeDropBronze = document.getElementById('bronzeIdle-output');                       
+                //     //     var activeDropBronze = document.getElementById('bronzeIdle-output');
                 //     //     testdwang62.dispatchEvent(mounsedownEvent);
                 //     //     testdwang62.dispatchEvent(mounseupEvent);
                 //     //     //activeDropBronze.click();
@@ -97,7 +104,7 @@ var DIRECTORY_URL = 'https://www.twitch.tv/directory/game/Eternal';
                 // // }
                 // var mounsedownEvent = new MouseEvent('mousedown');
                 // var mounseupEvent = new MouseEvent('mouseup');
-                
+
                 //     el.dispatchEvent(ev);
                 // alert(pos.x);
                 // alert(pos.y);
