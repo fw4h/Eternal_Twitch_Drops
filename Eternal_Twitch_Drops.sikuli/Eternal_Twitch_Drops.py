@@ -4,9 +4,9 @@ while True:
         click("bronzedrop.PNG")
     if exists(Pattern("silverdrop.PNG").similar(0.50)):
         click(Pattern("silverdrop-1.PNG").similar(0.50))
-    if not exists ("1544364318562.png"):
+    if not Region(0,73,59,58).exists("1544480537332.png"):
         wait(30)
-        if not exists ("1544364318562.png"):
+        if not Region(0,73,59,58).exists("1544480537332.png"):
             click(Location(51, 16))
             click("1544364981762.png")
 
