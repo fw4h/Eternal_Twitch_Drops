@@ -73,14 +73,22 @@
 setThrowException(False)
 <span class="kw">while</span> True:
     <span class="kw">if</span> exists(<span class="str">"bronzedrop.PNG"</span>):
-        <span class="skw">click</span>(<span class="str">"bronzedrop.PNG"</span>)
+        hover(<span class="str">"bronzedrop.PNG"</span>)
+        <span class="skw">wait</span>(<span class="dig">2</span>)
+        <span class="skw">doubleClick</span>()
     <span class="kw">if</span> exists(Pattern(<span class="str">"silverdrop.PNG"</span>).similar(<span class="dig">0.50</span>)):
-        <span class="skw">click</span>(Pattern(<span class="str">"silverdrop-1.PNG"</span>).similar(<span class="dig">0.50</span>))
+        hover(Pattern(<span class="str">"silverdrop-1.PNG"</span>).similar(<span class="dig">0.50</span>))
+        <span class="skw">wait</span>(<span class="dig">2</span>)
+        <span class="skw">doubleClick</span>()
     <span class="kw">if</span> <span class="kw">not</span> Region(<span class="dig">0</span>,<span class="dig">73</span>,<span class="dig">59</span>,<span class="dig">58</span>).exists(<img src="1544480537332.png" />):
-        <span class="skw">wait</span>(<span class="dig">30</span>)
+        <span class="skw">wait</span>(<span class="dig">3</span>)
         <span class="kw">if</span> <span class="kw">not</span> Region(<span class="dig">0</span>,<span class="dig">73</span>,<span class="dig">59</span>,<span class="dig">58</span>).exists(<img src="1544480537332.png" />):
+            hover(Location(<span class="dig">51</span>, <span class="dig">16</span>))
+            <span class="skw">wait</span>(<span class="dig">2</span>)
             <span class="skw">click</span>(Location(<span class="dig">51</span>, <span class="dig">16</span>))
-            <span class="skw">click</span>(<img src="1544364981762.png" />)
+            hover(<img src="1544364981762.png" />)
+            <span class="skw">wait</span>(<span class="dig">2</span>)
+            <span class="skw">click</span>()
 </pre>
 </body>
 </html>
