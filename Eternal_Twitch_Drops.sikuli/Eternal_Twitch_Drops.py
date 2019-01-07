@@ -13,7 +13,7 @@ while True:
         if not Region(0,73,59,58).exists("1544480537332.png"):
             hover(Location(51, 16))
             wait(2)
-            click(Location(51, 16))
+            click()
             hover("1544364981762.png")
             wait(2)
             click()
